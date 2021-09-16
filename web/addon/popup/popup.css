@@ -1,0 +1,26 @@
+
+
+body {
+    font-size: 0.75rem;
+    line-height: 1.334;
+    width: 22rem;
+}
+
+body {
+    background-color: #261f1f;
+    box-sizing: border-box;
+    color: #c4c4c4;
+    font-family: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 1rem 1rem;
+}
+
+a {
+    color: #bb2f2f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9b1d1d;
+}
+

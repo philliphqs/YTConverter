@@ -1,6 +1,6 @@
 import webbrowser
 
-from YTConverter.resources.variables import *
+from resources.variables import *
 
 import platform
 

@@ -1,10 +1,10 @@
 from tkinter import Tk, filedialog
 
-from YTConverter.resources.variables import *
+from resources.variables import *
 
-from YTConverter.ui import NavBar as NavBar_
+from ui import NavBar as NavBar_
 
-from YTConverter.backend import youtube
+from backend import youtube
 
 
 def dragViewport():
@@ -103,3 +103,7 @@ def selectfolder():
     file_path = filedialog.askdirectory()
     DirString = file_path
     set_value(FolderInput, DirString)
+
+
+def set_youtubelink(url):
+    set_value(YouTubeLinkInput, url)

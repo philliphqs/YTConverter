@@ -1,7 +1,7 @@
 from mutagen.id3 import ID3NoHeaderError
 from mutagen.id3 import ID3
 
-from YTConverter.resources.variables import *
+from resources.variables import *
 
 
 def show():

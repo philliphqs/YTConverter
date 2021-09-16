@@ -1,0 +1,29 @@
+{
+  "name": "YTConverter",
+  "version": "0.0.1",
+  "description": "Download YouTube videos in the best quality and convert them to mp3 (requires YTConverter App)",
+  "manifest_version": 2,
+  "icons": {
+    "128": "resources/icon.png"
+  },
+  "browser_action": {
+    "default_title": "YTConverter",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "128": "resources/icon.png"
+    }
+  },
+  "content_scripts": [{
+    "js": ["popup/popup.css"],
+    "matches": ["https://www.youtube.com/*"]
+  }],
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "http://localhost:54230/*",
+    "https://localhost:54230/*",
+    "localhost:54230/*",
+    "127.0.0.1:54230/*"
+  ]
+
+}

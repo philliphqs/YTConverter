@@ -3,9 +3,9 @@ import os
 import pytube.exceptions
 from pytube import YouTube, Playlist
 
-from YTConverter.resources.variables import *
+from resources.variables import *
 
-from YTConverter.ui import Tags
+from ui import Tags
 
 
 def download_youtube_video(sender, app_data):
@@ -58,12 +58,15 @@ def open_file(path):
 def download_youtube_mp3(yt, path, open_file_spec):
     yt.streams.filter(only_audio=True).first().download(output_path=path, filename=yt.title + '.mp3')
     set_value(StatusText, 'Finished')
-    set_viewport_height(370)
-    Tags.show()
+    #set_viewport_height(370)
 
-    Tags.update(title=yt.title, artist=yt.author, album=None, year=str(yt.publish_date)[0] + str(yt.publish_date)[1]
-                                                                   + str(yt.publish_date)[2] + str(yt.publish_date)[3],
-                track=None, genre=None)
+    show_item(OpenFileButton)
+    set_item_callback(OpenFileButton, open_file_spec)
+
+    #Tags.show()
+    #Tags.update(title=yt.title, artist=yt.author, album=None, year=str(yt.publish_date)[0] + str(yt.publish_date)[1]
+    #                                                               + str(yt.publish_date)[2] + str(yt.publish_date)[3],
+    #            track=None, genre=None)
     set_value(FolderInput, path + '/' + yt.title + '.mp3')
 
 
