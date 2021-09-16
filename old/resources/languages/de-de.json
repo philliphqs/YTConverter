@@ -1,0 +1,61 @@
+{
+    "MainWindow": {
+      "FolderName": {
+        "Label": "Ordner Name",
+        "Tip": "Du wirst einen Ordner finden, dass diesen Namen trägt.",
+        "Hint": "Meine heruntergeladenen Dateien"
+      },
+      "YouTubeURL": {
+        "Label": "YouTube Link",
+        "Tip": "",
+        "Hint": "https://youtube.com/watch?v=..."
+      },
+      "IsPlaylist": {
+        "Label": "Playlist",
+        "Tip": "Komplette Playlist herunterladen"
+      },
+      "IsReverse": {
+        "Label": "Rückwärts herunterladen",
+        "Tip": "Lädt deine Playlist rückwärts herunter."
+      },
+      "DownloadButton":{
+        "Label": "Herunterladen"
+      },
+      "SettingsButton": {
+        "Label": "Einstellungen"
+      }
+    },
+    "SettingsPopup": {
+      "ThemesCombo": {
+        "Label": "Design"
+      },
+      "LanguageCombo": {
+        "Label": "Sprache"
+      },
+      "AboutNode": {
+        "Label": "Über"
+      },
+      "CustomColorNode": {
+        "Label": "Eigenes Design"
+      },
+      "CloseSettingsButton": {
+        "Label": "Schließen"
+      }
+    },
+    "DownloadPopup": {
+      "StatusText": {
+          "Label0": "Warte auf Status...",
+          "Label1": "URL darf nicht leer sein!",
+          "Label2": "ist keine gültige URL!",
+          "Label3": "Download abgeschlossen!",
+          "Label4": "Lade herunter..."
+      },
+      "DetailNode": {
+        "Label": "Zeige Details"
+      },
+      "AbortDownloadButton": {
+        "Label0": "Abbrechen",
+        "Label1": "Schließen"
+      }
+    }
+}
